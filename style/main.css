@@ -1593,10 +1593,11 @@ a.feature-subtitle:hover {
   .feature-subtitle,
   .feature-item:first-of-type .feature-subtitle {
     line-height: 1.6;
-    max-width: 100%;
+    max-width: 80%;
   }
   .feature-subtitle {
-    margin: 0;
+    margin-inline: auto;
+    max-width: 80%;
   }
   .features-children {
     grid-template-columns: 1fr;
