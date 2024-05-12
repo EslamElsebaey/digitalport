@@ -1,0 +1,70 @@
+.nav-arrow-rotate::after {
+  transform: rotate(180deg);
+}
+
+.overflow-hiddden {
+  overflow: hidden;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: all linear 0.5s;
+
+  .categories-li .categories-btn {
+    height: 42px;
+  }
+
+  .search-item {
+    height: 42px;
+  }
+}
+
+.stayTop {
+  top: -200px;
+  transition: all linear 0.5s;
+}
+
+@include min-992 {
+  .fixed {
+    .categories-li {
+      height: 55px;
+    }
+    .logo img {
+      width: 125px;
+    }
+    .main-nav {
+      padding: 10px 0;
+    }
+  }
+}
+
+@include max-992 {
+  .fixed {
+    .search-item {
+      height: 40px;
+      margin-top: 7px;
+    }
+    .main-nav {
+      padding: 10px 0;
+    }
+    .logo img {
+      width: 110px;
+    }
+  }
+}
+
+@include max-768 {
+  .fixed {
+    .logo img {
+      width: 90px;
+    }
+    .main-nav {
+      padding-bottom: 8px;
+      padding-top: 10px;
+    }
+  }
+}

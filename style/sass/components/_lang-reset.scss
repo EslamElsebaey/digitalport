@@ -1,0 +1,35 @@
+html[dir="ltr"] {
+ 
+  .discount{
+    border-bottom-right-radius : 10px;
+    border-bottom-left-radius : 0;
+  }
+
+  .feature-subtitle {
+    max-width: 215px;
+    height: 60px;
+  }
+
+
+  @include max-1200 {
+    .feature-title {
+      line-height: 20px;
+    }
+    .feature-subtitle {
+      height: auto;
+    }
+  }
+
+  @include max-768 {
+    .feature-title {
+      line-height: 1.5;
+    }
+     .feature-subtitle{
+        max-width: 100%;
+        margin: 0;
+    }
+    .feature-subtitle {
+      line-height: 1.4;
+    }
+  }
+}

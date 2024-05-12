@@ -1,0 +1,39 @@
+.mainBanner {
+  .swiper-pagination {
+    bottom: 17px;
+  }
+  .mainBanner-parent {
+    position: relative;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #fff;
+  }
+}
+
+.mainBanner-link {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.mainBanner-link {
+  height: 100%;
+  width: 100%;
+}
+
+@include max-992 {
+  .mainBanner {
+    .swiper-pagination {
+      bottom: 12px;
+    }
+  }
+}
+
+@include max-768 {
+  .mainBanner-link img {
+    height: 100%;
+  }
+}
+
