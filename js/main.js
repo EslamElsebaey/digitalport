@@ -207,6 +207,12 @@ $(document).ready(function () {
     $("body").addClass("overflow-hiddden");
   });
 
+  // Open and close search input
+  $(".open-search").on("click", function () {
+    $(".search").slideToggle(300);
+    $(this).children(".icon").toggleClass("fa-xmark");
+  });
+
   // **************************************************************************************************
 
   // to top button

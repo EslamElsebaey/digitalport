@@ -56,17 +56,18 @@
       height: 100%;
       border-radius: 50%;
       transition: transform linear 0.2s;
+      object-fit: cover;
+      object-position: center;
     }
   }
 }
-
 
 @include max-768 {
   .categories {
     padding-top: 40px;
     padding-bottom: 75px;
   }
-  .categories .swiper-pagination{
+  .categories .swiper-pagination {
     bottom: -30px;
   }
   .categories-item .img-holder {
@@ -80,10 +81,9 @@
       position: absolute;
       inset: 0;
       width: 100%;
-      object-fit: cover;
     }
   }
-  .categories .main-title{
+  .categories .main-title {
     font-size: 18px;
     margin-bottom: 25px;
   }

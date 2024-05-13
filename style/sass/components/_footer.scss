@@ -153,8 +153,6 @@ footer {
   transform: rotate(180deg);
 }
 
-
-
 @include max-1200 {
   .message {
     width: 100%;
@@ -201,7 +199,7 @@ footer {
       padding-top: 10px;
     }
   }
-  .footer-item .quick-drop li{
+  .footer-item .quick-drop li {
     margin-bottom: 12px;
   }
   .nested {
@@ -236,12 +234,12 @@ footer {
   }
 
   .copyright .copyright-text {
-    margin-top: 15px;
+    margin-top: 25px;
     text-align: center;
     order: 2;
   }
   .tasawk-text {
     order: 3;
-    margin-top: 15px;
+    margin-top: 8px;
   }
 }

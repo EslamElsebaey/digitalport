@@ -12,23 +12,25 @@
   left: 0;
   right: 0;
   z-index: 50;
-  transition: all linear 0.5s;
+  transition: all ease-in-out 0.5s;
 
   .categories-li .categories-btn {
     height: 42px;
   }
 
-  .search-item {
+  .search {
     height: 42px;
   }
 }
 
 .stayTop {
-  top: -200px;
-  transition: all linear 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 
 @include min-992 {
+  .stayTop {
+    top: -200px;
+  }
   .fixed {
     .categories-li {
       height: 55px;
@@ -43,8 +45,11 @@
 }
 
 @include max-992 {
+  .stayTop {
+    top: -100px;
+  }
   .fixed {
-    .search-item {
+    .search {
       height: 40px;
       margin-top: 7px;
     }
