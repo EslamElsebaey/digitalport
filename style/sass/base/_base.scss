@@ -151,7 +151,7 @@ button {
 .categories,
 .newarrival,
 .bestseller,
-.merchants {
+.merchants , .features {
   .swiper-pagination-bullet-active {
     opacity: 1;
     background-color: #fd384f;
@@ -206,7 +206,7 @@ button {
   bottom: 10px;
   right: 10px;
   flex-direction: column;
-  z-index: 40;
+  z-index: 100;
 }
 
 @media screen and (min-width: 1300px) {

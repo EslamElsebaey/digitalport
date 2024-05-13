@@ -81,6 +81,22 @@ $(document).ready(function () {
         },
       },
     });
+      const featuresSwiper = new Swiper(" .features .swiper", {
+        loop: true,
+        autoplay: true,
+        draggable: true,
+        speed: 1000,
+        pagination: {
+          el: ".features .swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          350: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+        },
+      });
   }
 
   //  special-offers swiper
@@ -200,11 +216,13 @@ $(document).ready(function () {
   $(".closeBtn").on("click", function () {
     $("nav").removeClass("open-nav");
     $("body").removeClass("overflow-hiddden");
+    $(".toTop").show();
   });
 
   $(".bars").on("click", function () {
     $("nav").addClass("open-nav");
     $("body").addClass("overflow-hiddden");
+     $(".toTop").hide();
   });
 
   // Open and close search input

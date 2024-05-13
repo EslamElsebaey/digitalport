@@ -199,7 +199,7 @@ button:focus {
 .categories .swiper-pagination-bullet-active,
 .newarrival .swiper-pagination-bullet-active,
 .bestseller .swiper-pagination-bullet-active,
-.merchants .swiper-pagination-bullet-active {
+.merchants .swiper-pagination-bullet-active, .features .swiper-pagination-bullet-active {
   opacity: 1;
   background-color: #fd384f;
 }
@@ -248,7 +248,7 @@ button:focus {
   bottom: 10px;
   right: 10px;
   flex-direction: column;
-  z-index: 40;
+  z-index: 100;
 }
 
 @media screen and (min-width: 1300px) {
@@ -878,7 +878,7 @@ body {
     overflow-y: auto;
     margin: 0;
     transition: all ease-in-out 0.2s;
-    z-index: 150;
+    z-index: 90;
     position: fixed;
     left: 0;
     transform: translateY(-30px);
@@ -1522,8 +1522,11 @@ body {
 .features {
   padding: 30px 0;
 }
+.features .swiper-slide {
+  width: auto;
+}
 
-.features-children {
+.features .swiper-wrapper {
   padding-inline-start: 10px;
   padding-inline-end: 20px;
   display: flex;
@@ -1578,10 +1581,10 @@ a.feature-subtitle:hover {
   .feature-item {
     padding: 0;
   }
-  .feature-item:last-of-type {
+  .features .swiper-slide:last-of-type {
     margin-inline: auto;
   }
-  .features-children {
+  .features .swiper-wrapper {
     -moz-column-gap: 0;
          column-gap: 0;
     flex-wrap: wrap;
@@ -1591,7 +1594,7 @@ a.feature-subtitle:hover {
   }
 }
 @media only screen and (max-width: 991px) {
-  .features-children {
+  .features .swiper-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px 15px;
@@ -1601,7 +1604,7 @@ a.feature-subtitle:hover {
     text-align: center;
     padding: 0;
   }
-  .feature-item:last-of-type {
+  .features .swiper-slide:last-of-type {
     grid-column: 1/3;
   }
   .feature-title {
@@ -1621,15 +1624,22 @@ a.feature-subtitle:hover {
   .feature-item:last-of-type {
     max-width: 180px;
   }
-  .features-children {
+  .features {
+    padding-bottom: 65px;
+  }
+  .features .swiper-wrapper {
     grid-template-columns: 1fr 1fr;
     -moz-column-gap: 10px;
          column-gap: 10px;
     row-gap: 27px;
   }
-  .features-children {
+  .features .swiper-wrapper {
     padding: 0;
-    align-items: flex-start;
+    display: flex;
+    gap: unset;
+    justify-content: unset;
+    align-items: unset;
+    flex-wrap: unset;
   }
 }
 footer {
