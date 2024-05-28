@@ -310,6 +310,7 @@ header {
   top: 0;
   background-color: #191919;
   width: 100%;
+  z-index: 5;
 }
 
 .logo {
